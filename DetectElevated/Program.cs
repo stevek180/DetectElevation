@@ -80,8 +80,10 @@ class Program
         }
         else
         {
-            targetProcessName = "notepad"; // Default process name
+            Console.WriteLine("Please enter a process name as an argument.");
+            return;
         }
+        
 
         
         var currentUser = WindowsIdentity.GetCurrent().Name;
@@ -91,7 +93,7 @@ class Program
             string owner = GetProcessOwner(proc.Id);
             Console.WriteLine($"Process ID: {proc.Id}, Owner: {owner}");
 
-            Console.WriteLine(IsProcessElevated(proc));
+            Console.WriteLine($"ProcessName = {targetProcessName}  Status = {IsProcessElevated(proc)}");
         }
     }
 }
