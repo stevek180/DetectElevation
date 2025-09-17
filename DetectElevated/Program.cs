@@ -65,9 +65,10 @@ class Program
         }
         catch
         {
-            // Ignore errors
+            // Ignore errors, not needed.
         }
         return null;
+
     }
 
     static void Main(string[] args)
