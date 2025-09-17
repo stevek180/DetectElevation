@@ -2,7 +2,6 @@
 
 This repo is a quick-and-dirty .NET Console application to demonstrate how to determine if a given Windows process is being run as an Elevated Administrator. It takes the name of a process (as shown by the PowerShell Command "Get-Process") as a commandline argument.
 
-
 There are three results:  
 
  - NotElevated: Code reliably determines that the target process is not running as elevated
